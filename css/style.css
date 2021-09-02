@@ -178,6 +178,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 440px;
 }
 .button-slider {
     padding: 30px 105px;
@@ -203,6 +204,8 @@ section {
 }
 .slider__item-img {
     margin-bottom: 44px;
+    max-width: 387px;
+    max-height: 438px;
 }
 .arrow-left {
     margin-right: 20px;
@@ -279,7 +282,7 @@ section {
 .steps {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .steps__card {
     display: flex;
@@ -295,6 +298,9 @@ section {
 .steps__title {
     margin: 0;
     margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 .steps__desc {
     margin: 0;
