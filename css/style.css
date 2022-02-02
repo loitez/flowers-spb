@@ -835,6 +835,7 @@ a .map__desc-contacts {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        max-width: 100%;
     }
     .address,
     .working-hours,
@@ -933,6 +934,7 @@ a .map__desc-contacts {
     .yamap {
         height: 300px;
     }
+
 
 }
 
