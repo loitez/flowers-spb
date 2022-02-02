@@ -429,6 +429,7 @@ section {
     display: block;
     margin-top: 0;
     margin-bottom: 20px;
+    white-space: normal;
 }
 a .map__desc-contacts {
     cursor: pointer;
@@ -729,7 +730,7 @@ a .map__desc-contacts {
 
 @media (max-width: 840px) {
     .container {
-        width: 650px;
+        width: 635px;
     }
     section {
         padding-bottom: 40px;
@@ -782,8 +783,15 @@ a .map__desc-contacts {
         height: 100%;
         object-fit: cover;
     }
+    .follow-us__desc {
+        font-size: 18px;
+        line-height: 24px;
+    }
     .map__desc {
         left: 130px;
+    }
+    .map__desc-details {
+        max-width: 150px;
     }
 }
 @media (max-width: 690px) {
@@ -840,22 +848,28 @@ a .map__desc-contacts {
     .container {
         max-width: 400px;
     }
+
     section {
         padding-bottom: 25px;
     }
+
     .button-primary {
         padding: 7px 10px;
     }
+
     .main-screen img:first-of-type {
         height: 230px;
     }
+
     .subtitle {
         margin: 10px;
     }
+
     .slider__item-title {
         font-size: 20px;
         line-height: 25px;
     }
+
     .slider__item-desc,
     .slider__item-size,
     .slider__item-price {
@@ -863,24 +877,29 @@ a .map__desc-contacts {
         line-height: 20px;
         margin-bottom: 10px;
     }
-               }
+
     .slider__item-price {
         margin-bottom: 20px;
     }
+
     .special-offers__card {
         text-align: center;
     }
+
     .special-offers__img {
         display: none;
     }
+
     .species__card {
         height: 100px;
     }
+
     .title,
     .discount__title {
         font-size: 25px;
         line-height: 30px;
     }
+
     .discount__desc,
     .steps__desc,
     .follow-us__desc,
@@ -888,27 +907,34 @@ a .map__desc-contacts {
         font-size: 16px;
         line-height: 19px;
     }
+
     .follow-us__title {
         margin-top: 0;
         font-size: 25px;
         line-height: 30px;
     }
+
     .follow-us__img {
         max-width: 100%;
     }
+
     .feedback__card {
         max-width: 250px;
     }
+
     .feedback__title {
         margin-bottom: 20px;
     }
+
     .feedback {
         padding: 20px 34px 20px;
     }
+
     .yamap {
         height: 300px;
     }
 
+}
 
 @media (max-width: 435px) {
     .container {
@@ -972,7 +998,15 @@ a .map__desc-contacts {
     .feedback {
         padding: 20px 15px 20px;
     }
-
+    .map__desc-details {
+        display: block;
+    }
+    .address,
+    .email,
+    .telephone,
+    .working-hours {
+        margin: 20px auto;
+    }
     .yamap {
         height: 250px;
     }
@@ -988,10 +1022,7 @@ a .map__desc-contacts {
     .arrow-left {
         bottom: -30px;
     }
-    .map__desc-details {
-        max-width: 270px;
-        margin: 0 auto;
-    }
+
 }
 
 
