@@ -3,8 +3,8 @@ $(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<img src="../img/arrow.png" alt="Влево" class="arrow arrow-left">',
-        nextArrow: '<img src="../img/arrow.png" alt="Вправо" class="arrow arrow-right">'
+        prevArrow: '<img src="../img/b-arrow.png" alt="Влево" class="arrow arrow-left">',
+        nextArrow: '<img src="../img/b-arrow.png" alt="Вправо" class="arrow arrow-right">'
     });
 })
 
@@ -24,7 +24,6 @@ feedbackArrowLeft.addEventListener('click', () => {
         index--;
     }
     feedbackSliderItems.forEach((item) => {
-        console.dir(item);
         if (item.classList.contains('active')) {
             item.classList.remove('active');
         }
@@ -53,7 +52,5 @@ closeMenuBtn.addEventListener('click', () => {
         menus.forEach((item) => {
             item.classList.toggle('active-menu')
         })
-        console.log('ajjak');
-
 }
 )
