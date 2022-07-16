@@ -15,6 +15,11 @@ html {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    overflow-x: hidden;
 }
 html {
     width:100vw;
@@ -461,10 +466,9 @@ a .map__desc-contacts {
     text-shadow: 0 0 1px #fff;
 }
 .active-menu {
-    transform: translateY(500px);
     transition: .7s ease-in-out;
+    transform: translateY(450px);
 }
-
 @media (max-width: 1255px) {
     .container {
         max-width: 1000px;
@@ -687,18 +691,17 @@ a .map__desc-contacts {
         display: none;
     }
     .menu__list {
-
         display: block;
         position: absolute;
         background-color: #AE7C78;
         color: white;
-        padding: 5px;
-        width: 230px;
+        padding: 5px 5px 5px 20px;
+        width: 370px;
         transition: .7s ease-in-out;
     }
     .menu__item {
         padding: 5px;
-        text-align: center;
+        text-align: left;
     }
     .menu__item:not(:nth-child(3n)) {
         margin-right: 0;
@@ -710,14 +713,14 @@ a .map__desc-contacts {
         order: 2;
     }
     .menu-one .menu__list {
-        padding-top: 100px;
-        right: 80px;
-        top: -610px;
+        padding-top: 125px;
+        right: -100px;
+        top: -550px;
         box-shadow: 0 -5px 10px #8a615e;
     }
     .menu-two .menu__list {
-        right: 80px;
-        top: -425px;
+        right: -100px;
+        top: -340px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         box-shadow: 0 7px 7px #8a615e;
@@ -725,6 +728,14 @@ a .map__desc-contacts {
     }
     .menu__close {
         display: inline-block;
+        z-index: 999;
+
+    }
+    .menu__close.active {
+        z-index: 9999;
+    }
+    .menu__close.active svg line {
+        stroke: white;
     }
 }
 
@@ -1027,131 +1038,3 @@ a .map__desc-contacts {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-@media(max-width: 1255px) {
-    .container {
-        width: 1000px;
-    }
-    .main-screen img {
-        width: 300px;
-    }
-    .main-screen img:first-of-type {
-        margin-bottom: 40px;
-    }
-    .main-screen img:last-of-type {
-        margin-bottom: 70px;
-    }
-    .species__card {
-        width: 300px;
-        height: 342px;
-    }
-    .species__img {
-        width: inherit;
-        object-fit: fill;
-    }
-    .discount__img {
-        width: 400px;
-        object-fit: fill;
-    }
-}
-@media (max-width:1080px) {
-    .container {
-        width: 800px;
-    }
-    .main-screen {
-        flex-direction: column;
-        align-items: center;
-    }
-    .main-screen img {
-        align-self: center;
-        margin: 0;
-    }
-    .special-offers {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .special-offers__card {
-        margin-bottom: 20px;
-    }
-    .special-offers__img {
-        padding-right: 10px;
-        height: 40px;
-        align-self: flex-start;
-    }
-    .special-offers__text {
-        flex: 12;
-    }
-    .species {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .species__card {
-        margin-bottom: 40px;
-    }
-    .discount {
-        justify-content: space-between;
-    }
-    .discount__title {
-        margin-top: 10px;
-        font-size: 35px;
-    }
-    .discount__desc {
-        font-size: 20px;
-    }
-    .discount__img {
-        width: 300px;
-        object-fit: cover;
-    }
-    .follow-us {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .follow-us__info {
-        margin-bottom: 30px;
-    }
-    .follow-us__desc {
-        margin-top: 0;
-    }
-    .feedback__card {
-        width: 200px;
-    }
-    .menu__item:not(:nth-child(3n)) {
-        margin-right: 20px;
-    }
-    .menu__item {
-        text-align: center;
-    }
-    .logo {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-@media (max-width: 870px) {
-    .container {
-        width: 600px;
-    }
-    .menu__list {
-        flex-direction: column;
-        align-items: start;
-    }
-    .menu {
-        display: none;
-    }
-    .menu__close {
-        display: block;
-        cursor: pointer;
-    }
-}*/

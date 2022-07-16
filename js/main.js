@@ -52,5 +52,20 @@ closeMenuBtn.addEventListener('click', () => {
         menus.forEach((item) => {
             item.classList.toggle('active-menu')
         })
+        closeMenuBtn.classList.toggle('.active')
+    if (closeMenuBtn.classList.contains('.active')) {
+        changeColor('white')
+    } else {
+        changeColor('#AE7C78')
+    }
 }
 )
+
+ function changeColor (color) {
+     const lines = closeMenuBtn.querySelectorAll('line')
+     lines.forEach((item) => {
+         setTimeout(() => {
+             item.style.stroke = color;
+         }, 400)
+     })
+}
