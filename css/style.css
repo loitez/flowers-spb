@@ -344,6 +344,9 @@ section {
     justify-content: center;
     align-items: flex-start;
 }
+.follow-us__img img {
+    object-fit: contain;
+}
 .follow-us__img img:first-of-type {
     grid-row-start: 1;
     grid-row-end: 2;
