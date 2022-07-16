@@ -338,6 +338,9 @@ section {
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
 }
+.follow-us__img::after {
+    display: none;
+}
 .follow-us__info {
     display: flex;
     flex-direction: column;
