@@ -3,8 +3,8 @@ $(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<img src="../img/slider-arr.png" alt="Влево" class="arrow arrow-left">',
-        nextArrow: '<img src="../img/slider-arr.png" alt="Вправо" class="arrow arrow-right">'
+        prevArrow: '<img src="https://imageup.ru/img42/3986229/arrow.png" alt="Влево" class="arrow arrow-left">',
+        nextArrow: '<img src="https://imageup.ru/img42/3986229/arrow.png" alt="Вправо" class="arrow arrow-right">'
     });
 })
 
